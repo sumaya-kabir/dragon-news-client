@@ -1,0 +1,96 @@
+[debug] [2022-10-24T08:16:57.872Z] ----------------------------------------------------------------------
+[debug] [2022-10-24T08:16:57.878Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sumaya Kabir Shifa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-10-24T08:16:57.880Z] CLI Version:   11.15.0
+[debug] [2022-10-24T08:16:57.881Z] Platform:      win32
+[debug] [2022-10-24T08:16:57.881Z] Node Version:  v16.16.0
+[debug] [2022-10-24T08:16:57.979Z] Time:          Mon Oct 24 2022 14:16:57 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-10-24T08:16:57.981Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-24T08:16:58.132Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-24T08:16:58.132Z] > authorizing via signed-in user (sumayakabir4547@gmail.com)
+[debug] [2022-10-24T08:16:58.133Z] [iam] checking project dragon-news-c255a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-10-24T08:16:58.135Z] > refreshing access token with scopes: []
+[debug] [2022-10-24T08:16:58.138Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-24T08:16:58.138Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-24T08:16:58.479Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-10-24T08:16:58.479Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-24T08:16:58.552Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dragon-news-c255a:testIamPermissions [none]
+[debug] [2022-10-24T08:16:58.553Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dragon-news-c255a:testIamPermissions x-goog-quota-user=projects/dragon-news-c255a
+[debug] [2022-10-24T08:16:58.553Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dragon-news-c255a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-24T08:16:59.993Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dragon-news-c255a:testIamPermissions 200
+[debug] [2022-10-24T08:16:59.994Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dragon-news-c255a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-10-24T08:17:00.004Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dragon-news-c255a [none]
+[debug] [2022-10-24T08:17:00.541Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dragon-news-c255a 200
+[debug] [2022-10-24T08:17:00.542Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dragon-news-c255a {"projectId":"dragon-news-c255a","projectNumber":"1056415730262","displayName":"dragon-news","name":"projects/dragon-news-c255a","resources":{"hostingSite":"dragon-news-c255a"},"state":"ACTIVE","etag":"1_e10c4e5f-f83b-49c0-8222-099a377b12cf"}
+[info] 
+[info] === Deploying to 'dragon-news-c255a'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-10-24T08:17:00.575Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/versions [none]
+[debug] [2022-10-24T08:17:00.576Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-10-24T08:17:02.219Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/versions 200
+[debug] [2022-10-24T08:17:02.220Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/versions {"name":"projects/1056415730262/sites/dragon-news-c255a/versions/dfd41bb69e427c2b","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[dragon-news-c255a]: beginning deploy... 
+[info] i  hosting[dragon-news-c255a]: found 15 files in build 
+[debug] [2022-10-24T08:17:02.251Z] [hosting] uploading with 200 concurrency
+[debug] [2022-10-24T08:17:02.815Z] [hosting] hash cache [YnVpbGQ] stored for 15 files
+[debug] [2022-10-24T08:17:02.816Z] [hosting][hash queue][FINAL] {"max":553,"min":3,"avg":56.2,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":561}
+[debug] [2022-10-24T08:17:02.816Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/1056415730262/sites/dragon-news-c255a/versions/dfd41bb69e427c2b:populateFiles [none]
+[debug] [2022-10-24T08:17:02.816Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1056415730262/sites/dragon-news-c255a/versions/dfd41bb69e427c2b:populateFiles {"files":{"/favicon.ico":"eae62e993eb980ec8a25058c39d5a51feab118bd2100c4deebb2a9c158ec11f9","/logo192.png":"3ee59515172ee198f3be375979df15ac5345183e656720a381b8872b2a39dc8b","/logo512.png":"ee7e2f3fdb8209c4b6fd7bef6ba50d1b9dba30a25bb5c3126df057e1cb6f5331","/manifest.json":"aff3449bdc238776f5d6d967f19ec491b36aed5fb7f23ccff6500736fd58494a","/robots.txt":"bfe106a3fb878dc83461c86818bf74fc1bdc7f28538ba613cd3e775516ce8b49","/asset-manifest.json":"8ff138db9c300a5bd69fdda014890dd8d9bf32c3c380491dc75385c2e3545e31","/index.html":"6c8cb6e754db839f5f35fa4e34012b760389f4bc21f99eb324cbd693f37e3c49","/static/js/787.9ac1bc7a.chunk.js":"e2179dbae142b4c0ee9210b3c71f07297701747646d655c21f6a1d8b3ae9deb5","/static/js/787.9ac1bc7a.chunk.js.map":"69084b7b98889d3136b9a39eb2f5768ed177a50e7f11376d0055736203422060","/static/js/main.7e62374d.js.LICENSE.txt":"e8c77516f20eff676f2f07123303c28dec78cfaa8d281886033377c0448ad057","/static/media/Brand1.bd18bcdf939e3e736810.png":"52f944dec849096660dd871cd3be8806dd2167a35cec0b9e4457077d2ce5019b","/static/css/main.b419591d.css":"85cf2dbd98210106773c24dae84d1afc138bb2953d2ce9089c05f0a24c82d161","/static/js/main.7e62374d.js":"44736a67e9b6b811c7d7c27218c0d47782e76eb0e213a1ccfb3a85f5d21719a0","/static/css/main.b419591d.css.map":"68939a2d0e016f600054047b31ecd5e07e9b79830f1a0a7e274bdaa689c13dce","/static/js/main.7e62374d.js.map":"ade5667a863e8019a4790fc48ff32dc424c3ceb662ad4827550c08e10ed8038a"}}
+[debug] [2022-10-24T08:17:03.857Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/1056415730262/sites/dragon-news-c255a/versions/dfd41bb69e427c2b:populateFiles 200
+[debug] [2022-10-24T08:17:03.858Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/1056415730262/sites/dragon-news-c255a/versions/dfd41bb69e427c2b:populateFiles {"uploadRequiredHashes":["ade5667a863e8019a4790fc48ff32dc424c3ceb662ad4827550c08e10ed8038a","8ff138db9c300a5bd69fdda014890dd8d9bf32c3c380491dc75385c2e3545e31","44736a67e9b6b811c7d7c27218c0d47782e76eb0e213a1ccfb3a85f5d21719a0","6c8cb6e754db839f5f35fa4e34012b760389f4bc21f99eb324cbd693f37e3c49"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files"}
+[debug] [2022-10-24T08:17:03.859Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/ade5667a863e8019a4790fc48ff32dc424c3ceb662ad4827550c08e10ed8038a [none]
+[debug] [2022-10-24T08:17:03.860Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/ade5667a863e8019a4790fc48ff32dc424c3ceb662ad4827550c08e10ed8038a [stream]
+[debug] [2022-10-24T08:17:03.861Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/8ff138db9c300a5bd69fdda014890dd8d9bf32c3c380491dc75385c2e3545e31 [none]
+[debug] [2022-10-24T08:17:03.861Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/8ff138db9c300a5bd69fdda014890dd8d9bf32c3c380491dc75385c2e3545e31 [stream]
+[debug] [2022-10-24T08:17:03.863Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/44736a67e9b6b811c7d7c27218c0d47782e76eb0e213a1ccfb3a85f5d21719a0 [none]
+[debug] [2022-10-24T08:17:03.864Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/44736a67e9b6b811c7d7c27218c0d47782e76eb0e213a1ccfb3a85f5d21719a0 [stream]
+[debug] [2022-10-24T08:17:03.865Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/6c8cb6e754db839f5f35fa4e34012b760389f4bc21f99eb324cbd693f37e3c49 [none]
+[debug] [2022-10-24T08:17:03.865Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/6c8cb6e754db839f5f35fa4e34012b760389f4bc21f99eb324cbd693f37e3c49 [stream]
+[debug] [2022-10-24T08:17:03.867Z] [hosting][populate queue][FINAL] {"max":1045,"min":1045,"avg":1045,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1053}
+[debug] [2022-10-24T08:17:03.867Z] [hosting] uploads queued: 4
+[debug] [2022-10-24T08:17:06.083Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/6c8cb6e754db839f5f35fa4e34012b760389f4bc21f99eb324cbd693f37e3c49 200
+[debug] [2022-10-24T08:17:06.084Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/6c8cb6e754db839f5f35fa4e34012b760389f4bc21f99eb324cbd693f37e3c49 [stream]
+[debug] [2022-10-24T08:17:06.237Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/8ff138db9c300a5bd69fdda014890dd8d9bf32c3c380491dc75385c2e3545e31 200
+[debug] [2022-10-24T08:17:06.238Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/8ff138db9c300a5bd69fdda014890dd8d9bf32c3c380491dc75385c2e3545e31 [stream]
+[debug] [2022-10-24T08:17:06.278Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/44736a67e9b6b811c7d7c27218c0d47782e76eb0e213a1ccfb3a85f5d21719a0 200
+[debug] [2022-10-24T08:17:06.280Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/44736a67e9b6b811c7d7c27218c0d47782e76eb0e213a1ccfb3a85f5d21719a0 [stream]
+[debug] [2022-10-24T08:17:08.119Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/ade5667a863e8019a4790fc48ff32dc424c3ceb662ad4827550c08e10ed8038a 200
+[debug] [2022-10-24T08:17:08.119Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/dragon-news-c255a/versions/dfd41bb69e427c2b/files/ade5667a863e8019a4790fc48ff32dc424c3ceb662ad4827550c08e10ed8038a [stream]
+[debug] [2022-10-24T08:17:08.120Z] [hosting][upload queue][FINAL] {"max":4262,"min":2226,"avg":2822.75,"active":0,"complete":4,"success":4,"errored":0,"retried":0,"total":4,"elapsed":4262}
+[info] +  hosting[dragon-news-c255a]: file upload complete 
+[debug] [2022-10-24T08:17:08.124Z] [hosting] deploy completed after 5900ms
+[debug] [2022-10-24T08:17:08.136Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "dragon-news-c255a"
+    },
+    "version": "projects/1056415730262/sites/dragon-news-c255a/versions/dfd41bb69e427c2b"
+  }
+]
+[info] i  hosting[dragon-news-c255a]: finalizing version... 
+[debug] [2022-10-24T08:17:08.143Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/versions/dfd41bb69e427c2b updateMask=status%2Cconfig
+[debug] [2022-10-24T08:17:08.143Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/versions/dfd41bb69e427c2b {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-10-24T08:17:09.149Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/versions/dfd41bb69e427c2b 200
+[debug] [2022-10-24T08:17:09.149Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/versions/dfd41bb69e427c2b {"name":"projects/1056415730262/sites/dragon-news-c255a/versions/dfd41bb69e427c2b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-10-24T08:17:01.993738Z","createUser":{"email":"sumayakabir4547@gmail.com"},"finalizeTime":"2022-10-24T08:17:09.544777Z","finalizeUser":{"email":"sumayakabir4547@gmail.com"}}
+[debug] [2022-10-24T08:17:09.149Z] [hosting] finalized version for dragon-news-c255a:[object Object]
+[info] +  hosting[dragon-news-c255a]: version finalized 
+[info] i  hosting[dragon-news-c255a]: releasing new version... 
+[debug] [2022-10-24T08:17:09.151Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/channels/live/releases versionName=projects%2F1056415730262%2Fsites%2Fdragon-news-c255a%2Fversions%2Fdfd41bb69e427c2b
+[debug] [2022-10-24T08:17:09.151Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/channels/live/releases {}
+[debug] [2022-10-24T08:17:10.442Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/channels/live/releases 200
+[debug] [2022-10-24T08:17:10.444Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/dragon-news-c255a/channels/live/releases {"name":"projects/1056415730262/sites/dragon-news-c255a/channels/live/releases/1666599430242203","version":{"name":"projects/1056415730262/sites/dragon-news-c255a/versions/dfd41bb69e427c2b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-10-24T08:17:01.993738Z","createUser":{"email":"sumayakabir4547@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu3gmhdupj23emPSDgzMIIe_vTuRokL3QZaooztIDw"},"finalizeTime":"2022-10-24T08:17:09.544777Z","finalizeUser":{"email":"sumayakabir4547@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu3gmhdupj23emPSDgzMIIe_vTuRokL3QZaooztIDw"}},"type":"DEPLOY","releaseTime":"2022-10-24T08:17:10.242203364Z","releaseUser":{"email":"sumayakabir4547@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu3gmhdupj23emPSDgzMIIe_vTuRokL3QZaooztIDw"}}
+[debug] [2022-10-24T08:17:10.444Z] [hosting] release: {"name":"projects/1056415730262/sites/dragon-news-c255a/channels/live/releases/1666599430242203","version":{"name":"projects/1056415730262/sites/dragon-news-c255a/versions/dfd41bb69e427c2b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-10-24T08:17:01.993738Z","createUser":{"email":"sumayakabir4547@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu3gmhdupj23emPSDgzMIIe_vTuRokL3QZaooztIDw"},"finalizeTime":"2022-10-24T08:17:09.544777Z","finalizeUser":{"email":"sumayakabir4547@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu3gmhdupj23emPSDgzMIIe_vTuRokL3QZaooztIDw"}},"type":"DEPLOY","releaseTime":"2022-10-24T08:17:10.242203364Z","releaseUser":{"email":"sumayakabir4547@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ALm5wu3gmhdupj23emPSDgzMIIe_vTuRokL3QZaooztIDw"}}
+[info] +  hosting[dragon-news-c255a]: release complete 
